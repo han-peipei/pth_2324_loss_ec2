@@ -26,7 +26,7 @@ torch.backends.cudnn.allow_tf32 = False
 # PY_DIR = os.path.dirname(os.path.abspath(__file__))
 # JOB_DIR = os.environ.get("JOB_DIR", PY_DIR)             # bash 所在目录（推荐从 bash 传入）
 # BASE_DIR = os.path.abspath(os.path.join(JOB_DIR, "..")) # bash 的上一级目录
-kaggle_dir='/kaggle/working/pth_2324_loss_ec/'
+kaggle_dir='/kaggle/working/pth_2324_loss_ec2/'
 ##########################################################################################
 def standardize(data):
     mean = data.mean()
