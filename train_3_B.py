@@ -556,7 +556,7 @@ def train_and_evaluate_from_npy(
     plt.close()
 #############################################################################
     # 每小时MSE
-    forecast_hours=24
+    forecast_hours=8
     hourly_mse = [mean_squared_error(trues[:,i], preds[:,i]) for i in range(forecast_hours)]
     hourly_mae  = [mean_absolute_error(trues[:,i], preds[:,i]) for i in range(forecast_hours)]
     plt.plot(hourly_mse,'o-')
